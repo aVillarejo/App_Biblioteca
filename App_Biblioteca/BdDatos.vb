@@ -8,7 +8,7 @@
 
     Public Sub INICIO()
         Conexion = New SqlClient.SqlConnection("Server=MACBOOKPRO-PC\SQLEXPRESS; database=BDDBIBLIOTECA; uid=sa; pwd=12345;")
-        'prueba de codigo
+        'prueba de codigo Hola betoben
     End Sub
 
     Public Function Conectar() As Boolean
