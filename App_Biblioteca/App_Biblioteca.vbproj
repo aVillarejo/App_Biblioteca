@@ -87,6 +87,12 @@
     <Compile Include="FrmLectores.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmUsuarios.Designer.vb">
+      <DependentUpon>FrmUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
@@ -103,6 +109,12 @@
       <DependentUpon>MM_FrmLectores.vb</DependentUpon>
     </Compile>
     <Compile Include="MM_FrmLectores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MM_FrmUsuarios.Designer.vb">
+      <DependentUpon>MM_FrmUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MM_FrmUsuarios.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -125,6 +137,9 @@
     <EmbeddedResource Include="FrmLectores.resx">
       <DependentUpon>FrmLectores.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuarios.resx">
+      <DependentUpon>FrmUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
@@ -133,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MM_FrmLectores.resx">
       <DependentUpon>MM_FrmLectores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MM_FrmUsuarios.resx">
+      <DependentUpon>MM_FrmUsuarios.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -178,6 +196,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1080imagefulltiopalomino.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book_VSHelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Overlay_Share_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base_business_contacts.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

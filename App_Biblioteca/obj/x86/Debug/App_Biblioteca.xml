@@ -193,11 +193,43 @@ TableAdapterManager is used to coordinate TableAdapters in the dataset to enable
 </member><member name="P:App_Biblioteca.My.Resources.Resources.Culture">
 	<summary>
   Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
-  búsquedas de recursos mediante esta clase de recurso con establecimiento inflexible de tipos.
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member><member name="P:App_Biblioteca.My.Resources.Resources._1">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:App_Biblioteca.My.Resources.Resources._1080imagefulltiopalomino">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:App_Biblioteca.My.Resources.Resources.base_business_contacts">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:App_Biblioteca.My.Resources.Resources.biblio">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:App_Biblioteca.My.Resources.Resources.Book_VSHelp">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:App_Biblioteca.My.Resources.Resources.chris_lawton_236416">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:App_Biblioteca.My.Resources.Resources.clem_onojeghuo_142119">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:App_Biblioteca.My.Resources.Resources.Overlay_Share_256">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member><member name="T:App_Biblioteca.My.Resources.Resources">
 	<summary>
-  Clase de recurso con establecimiento inflexible de tipos, para buscar cadenas traducidas, etc.
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
 </summary>
 </member>
 </members>

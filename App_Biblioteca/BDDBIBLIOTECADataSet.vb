@@ -1,8 +1,10 @@
 ﻿Partial Class BDDBIBLIOTECADataSet
-End Class
+    Partial Class TBL_LECTORESDataTable
 
-Namespace BDDBIBLIOTECADataSetTableAdapters
+        Private Sub TBL_LECTORESDataTable_TBL_LECTORESRowChanging(ByVal sender As System.Object, ByVal e As TBL_LECTORESRowChangeEvent) Handles Me.TBL_LECTORESRowChanging
 
-    Partial Public Class TBL_LECTORESTableAdapter
+        End Sub
+
     End Class
-End Namespace
+
+End Class

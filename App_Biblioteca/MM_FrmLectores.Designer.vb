@@ -22,30 +22,30 @@ Partial Class MM_FrmLectores
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnCancelar = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtNombre = New System.Windows.Forms.TextBox()
+        Me.txtApeMat = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txtDir = New System.Windows.Forms.TextBox()
+        Me.txtApePat = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.txtEmail = New System.Windows.Forms.TextBox()
+        Me.txtTel = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnGuardar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Button1
+        'btnCancelar
         '
-        Me.Button1.Location = New System.Drawing.Point(353, 363)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Cancelar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnCancelar.Location = New System.Drawing.Point(353, 363)
+        Me.btnCancelar.Name = "btnCancelar"
+        Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
+        Me.btnCancelar.TabIndex = 0
+        Me.btnCancelar.Text = "Cancelar"
+        Me.btnCancelar.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -56,19 +56,19 @@ Partial Class MM_FrmLectores
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Nombre"
         '
-        'TextBox1
+        'txtNombre
         '
-        Me.TextBox1.Location = New System.Drawing.Point(170, 72)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(135, 20)
-        Me.TextBox1.TabIndex = 2
+        Me.txtNombre.Location = New System.Drawing.Point(170, 72)
+        Me.txtNombre.Name = "txtNombre"
+        Me.txtNombre.Size = New System.Drawing.Size(135, 20)
+        Me.txtNombre.TabIndex = 2
         '
-        'TextBox2
+        'txtApeMat
         '
-        Me.TextBox2.Location = New System.Drawing.Point(454, 72)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(135, 20)
-        Me.TextBox2.TabIndex = 3
+        Me.txtApeMat.Location = New System.Drawing.Point(454, 72)
+        Me.txtApeMat.Name = "txtApeMat"
+        Me.txtApeMat.Size = New System.Drawing.Size(135, 20)
+        Me.txtApeMat.TabIndex = 3
         '
         'Label2
         '
@@ -88,19 +88,19 @@ Partial Class MM_FrmLectores
         Me.Label3.TabIndex = 12
         Me.Label3.Text = "Direccion"
         '
-        'TextBox3
+        'txtDir
         '
-        Me.TextBox3.Location = New System.Drawing.Point(454, 148)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(135, 20)
-        Me.TextBox3.TabIndex = 11
+        Me.txtDir.Location = New System.Drawing.Point(454, 148)
+        Me.txtDir.Name = "txtDir"
+        Me.txtDir.Size = New System.Drawing.Size(135, 20)
+        Me.txtDir.TabIndex = 11
         '
-        'TextBox4
+        'txtApePat
         '
-        Me.TextBox4.Location = New System.Drawing.Point(170, 148)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(135, 20)
-        Me.TextBox4.TabIndex = 10
+        Me.txtApePat.Location = New System.Drawing.Point(170, 148)
+        Me.txtApePat.Name = "txtApePat"
+        Me.txtApePat.Size = New System.Drawing.Size(135, 20)
+        Me.txtApePat.TabIndex = 10
         '
         'Label4
         '
@@ -120,19 +120,19 @@ Partial Class MM_FrmLectores
         Me.Label5.TabIndex = 16
         Me.Label5.Text = "Email"
         '
-        'TextBox5
+        'txtEmail
         '
-        Me.TextBox5.Location = New System.Drawing.Point(454, 226)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(135, 20)
-        Me.TextBox5.TabIndex = 15
+        Me.txtEmail.Location = New System.Drawing.Point(454, 226)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(135, 20)
+        Me.txtEmail.TabIndex = 15
         '
-        'TextBox6
+        'txtTel
         '
-        Me.TextBox6.Location = New System.Drawing.Point(170, 226)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(135, 20)
-        Me.TextBox6.TabIndex = 14
+        Me.txtTel.Location = New System.Drawing.Point(170, 226)
+        Me.txtTel.Name = "txtTel"
+        Me.txtTel.Size = New System.Drawing.Size(135, 20)
+        Me.txtTel.TabIndex = 14
         '
         'Label6
         '
@@ -143,52 +143,52 @@ Partial Class MM_FrmLectores
         Me.Label6.TabIndex = 13
         Me.Label6.Text = "Telefono"
         '
-        'Button2
+        'btnGuardar
         '
-        Me.Button2.Location = New System.Drawing.Point(211, 363)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 17
-        Me.Button2.Text = "Guardar"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnGuardar.Location = New System.Drawing.Point(211, 363)
+        Me.btnGuardar.Name = "btnGuardar"
+        Me.btnGuardar.Size = New System.Drawing.Size(75, 23)
+        Me.btnGuardar.TabIndex = 17
+        Me.btnGuardar.Text = "Guardar"
+        Me.btnGuardar.UseVisualStyleBackColor = True
         '
         'MM_FrmLectores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(670, 446)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox6)
+        Me.Controls.Add(Me.txtEmail)
+        Me.Controls.Add(Me.txtTel)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.txtDir)
+        Me.Controls.Add(Me.txtApePat)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtApeMat)
+        Me.Controls.Add(Me.txtNombre)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnCancelar)
         Me.Name = "MM_FrmLectores"
         Me.Text = "MM_FrmLectores"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnCancelar As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents txtNombre As System.Windows.Forms.TextBox
+    Friend WithEvents txtApeMat As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents txtDir As System.Windows.Forms.TextBox
+    Friend WithEvents txtApePat As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
+    Friend WithEvents txtEmail As System.Windows.Forms.TextBox
+    Friend WithEvents txtTel As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btnGuardar As System.Windows.Forms.Button
 End Class

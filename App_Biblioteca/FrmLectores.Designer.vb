@@ -24,21 +24,21 @@ Partial Class FrmLectores
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.DTLectores = New System.Windows.Forms.DataGridView()
-        Me.ID_NUMLECTOR = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NOMBREDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.APATERNODataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AMATERNODataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DIRECCCIONDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TELDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.EMAILDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.EXISTEDataGridViewCheckBoxColumn = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.TBLLECTORESBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.BDDBIBLIOTECADataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.BDDBIBLIOTECADataSet = New App_Biblioteca.BDDBIBLIOTECADataSet()
-        Me.TBL_LECTORESTableAdapter = New App_Biblioteca.BDDBIBLIOTECADataSetTableAdapters.TBL_LECTORESTableAdapter()
         Me.btnNuevo = New System.Windows.Forms.Button()
         Me.btnEditar = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.ID_NUMLECTOR = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NOMBRE = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.A_PATERNO = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.A_MATERNO = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DIRECCCION = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TEL = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EMAIL = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EXISTE = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.BDDBIBLIOTECADataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.BDDBIBLIOTECADataSet = New App_Biblioteca.BDDBIBLIOTECADataSet()
+        Me.TBL_LECTORESTableAdapter = New App_Biblioteca.BDDBIBLIOTECADataSetTableAdapters.TBL_LECTORESTableAdapter()
         CType(Me.DTLectores, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TBLLECTORESBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BDDBIBLIOTECADataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -52,98 +52,20 @@ Partial Class FrmLectores
         Me.DTLectores.AllowUserToOrderColumns = True
         Me.DTLectores.AutoGenerateColumns = False
         Me.DTLectores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DTLectores.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID_NUMLECTOR, Me.NOMBREDataGridViewTextBoxColumn, Me.APATERNODataGridViewTextBoxColumn, Me.AMATERNODataGridViewTextBoxColumn, Me.DIRECCCIONDataGridViewTextBoxColumn, Me.TELDataGridViewTextBoxColumn, Me.EMAILDataGridViewTextBoxColumn, Me.EXISTEDataGridViewCheckBoxColumn})
+        Me.DTLectores.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID_NUMLECTOR, Me.NOMBRE, Me.A_PATERNO, Me.A_MATERNO, Me.DIRECCCION, Me.TEL, Me.EMAIL, Me.EXISTE})
         Me.DTLectores.DataSource = Me.TBLLECTORESBindingSource
         Me.DTLectores.Dock = System.Windows.Forms.DockStyle.Top
         Me.DTLectores.Location = New System.Drawing.Point(0, 0)
         Me.DTLectores.Name = "DTLectores"
         Me.DTLectores.ReadOnly = True
+        Me.DTLectores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DTLectores.Size = New System.Drawing.Size(1259, 407)
         Me.DTLectores.TabIndex = 0
-        '
-        'ID_NUMLECTOR
-        '
-        Me.ID_NUMLECTOR.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.ID_NUMLECTOR.DataPropertyName = "ID_NUMLECTOR"
-        Me.ID_NUMLECTOR.HeaderText = "ID_NUMLECTOR"
-        Me.ID_NUMLECTOR.Name = "ID_NUMLECTOR"
-        Me.ID_NUMLECTOR.ReadOnly = True
-        Me.ID_NUMLECTOR.Visible = False
-        '
-        'NOMBREDataGridViewTextBoxColumn
-        '
-        Me.NOMBREDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.NOMBREDataGridViewTextBoxColumn.DataPropertyName = "NOMBRE"
-        Me.NOMBREDataGridViewTextBoxColumn.HeaderText = "NOMBRE"
-        Me.NOMBREDataGridViewTextBoxColumn.Name = "NOMBREDataGridViewTextBoxColumn"
-        Me.NOMBREDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'APATERNODataGridViewTextBoxColumn
-        '
-        Me.APATERNODataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.APATERNODataGridViewTextBoxColumn.DataPropertyName = "A_PATERNO"
-        Me.APATERNODataGridViewTextBoxColumn.HeaderText = "Apellido Paterno"
-        Me.APATERNODataGridViewTextBoxColumn.Name = "APATERNODataGridViewTextBoxColumn"
-        Me.APATERNODataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'AMATERNODataGridViewTextBoxColumn
-        '
-        Me.AMATERNODataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.AMATERNODataGridViewTextBoxColumn.DataPropertyName = "A_MATERNO"
-        Me.AMATERNODataGridViewTextBoxColumn.HeaderText = "Apellido Materno"
-        Me.AMATERNODataGridViewTextBoxColumn.Name = "AMATERNODataGridViewTextBoxColumn"
-        Me.AMATERNODataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'DIRECCCIONDataGridViewTextBoxColumn
-        '
-        Me.DIRECCCIONDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.DIRECCCIONDataGridViewTextBoxColumn.DataPropertyName = "DIRECCCION"
-        Me.DIRECCCIONDataGridViewTextBoxColumn.HeaderText = "Direccion"
-        Me.DIRECCCIONDataGridViewTextBoxColumn.Name = "DIRECCCIONDataGridViewTextBoxColumn"
-        Me.DIRECCCIONDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'TELDataGridViewTextBoxColumn
-        '
-        Me.TELDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.TELDataGridViewTextBoxColumn.DataPropertyName = "TEL"
-        Me.TELDataGridViewTextBoxColumn.HeaderText = "Telefono"
-        Me.TELDataGridViewTextBoxColumn.Name = "TELDataGridViewTextBoxColumn"
-        Me.TELDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'EMAILDataGridViewTextBoxColumn
-        '
-        Me.EMAILDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.EMAILDataGridViewTextBoxColumn.DataPropertyName = "EMAIL"
-        Me.EMAILDataGridViewTextBoxColumn.HeaderText = "Email"
-        Me.EMAILDataGridViewTextBoxColumn.Name = "EMAILDataGridViewTextBoxColumn"
-        Me.EMAILDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'EXISTEDataGridViewCheckBoxColumn
-        '
-        Me.EXISTEDataGridViewCheckBoxColumn.DataPropertyName = "EXISTE"
-        Me.EXISTEDataGridViewCheckBoxColumn.HeaderText = "EXISTE"
-        Me.EXISTEDataGridViewCheckBoxColumn.Name = "EXISTEDataGridViewCheckBoxColumn"
-        Me.EXISTEDataGridViewCheckBoxColumn.ReadOnly = True
-        Me.EXISTEDataGridViewCheckBoxColumn.Visible = False
         '
         'TBLLECTORESBindingSource
         '
         Me.TBLLECTORESBindingSource.DataMember = "TBL_LECTORES"
         Me.TBLLECTORESBindingSource.DataSource = Me.BDDBIBLIOTECADataSetBindingSource
-        '
-        'BDDBIBLIOTECADataSetBindingSource
-        '
-        Me.BDDBIBLIOTECADataSetBindingSource.DataSource = Me.BDDBIBLIOTECADataSet
-        Me.BDDBIBLIOTECADataSetBindingSource.Position = 0
-        '
-        'BDDBIBLIOTECADataSet
-        '
-        Me.BDDBIBLIOTECADataSet.DataSetName = "BDDBIBLIOTECADataSet"
-        Me.BDDBIBLIOTECADataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'TBL_LECTORESTableAdapter
-        '
-        Me.TBL_LECTORESTableAdapter.ClearBeforeFill = True
         '
         'btnNuevo
         '
@@ -165,12 +87,91 @@ Partial Class FrmLectores
         '
         'btnEliminar
         '
-        Me.btnEliminar.Location = New System.Drawing.Point(722, 502)
+        Me.btnEliminar.Location = New System.Drawing.Point(713, 502)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(95, 43)
         Me.btnEliminar.TabIndex = 3
         Me.btnEliminar.Text = "Eliminar"
         Me.btnEliminar.UseVisualStyleBackColor = True
+        '
+        'ID_NUMLECTOR
+        '
+        Me.ID_NUMLECTOR.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.ID_NUMLECTOR.DataPropertyName = "ID_NUMLECTOR"
+        Me.ID_NUMLECTOR.HeaderText = "ID_NUMLECTOR"
+        Me.ID_NUMLECTOR.Name = "ID_NUMLECTOR"
+        Me.ID_NUMLECTOR.ReadOnly = True
+        Me.ID_NUMLECTOR.Visible = False
+        '
+        'NOMBRE
+        '
+        Me.NOMBRE.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.NOMBRE.DataPropertyName = "NOMBRE"
+        Me.NOMBRE.HeaderText = "NOMBRE"
+        Me.NOMBRE.Name = "NOMBRE"
+        Me.NOMBRE.ReadOnly = True
+        '
+        'A_PATERNO
+        '
+        Me.A_PATERNO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.A_PATERNO.DataPropertyName = "A_PATERNO"
+        Me.A_PATERNO.HeaderText = "Apellido Paterno"
+        Me.A_PATERNO.Name = "A_PATERNO"
+        Me.A_PATERNO.ReadOnly = True
+        '
+        'A_MATERNO
+        '
+        Me.A_MATERNO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.A_MATERNO.DataPropertyName = "A_MATERNO"
+        Me.A_MATERNO.HeaderText = "Apellido Materno"
+        Me.A_MATERNO.Name = "A_MATERNO"
+        Me.A_MATERNO.ReadOnly = True
+        '
+        'DIRECCCION
+        '
+        Me.DIRECCCION.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.DIRECCCION.DataPropertyName = "DIRECCCION"
+        Me.DIRECCCION.HeaderText = "Direccion"
+        Me.DIRECCCION.Name = "DIRECCCION"
+        Me.DIRECCCION.ReadOnly = True
+        '
+        'TEL
+        '
+        Me.TEL.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.TEL.DataPropertyName = "TEL"
+        Me.TEL.HeaderText = "Telefono"
+        Me.TEL.Name = "TEL"
+        Me.TEL.ReadOnly = True
+        '
+        'EMAIL
+        '
+        Me.EMAIL.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.EMAIL.DataPropertyName = "EMAIL"
+        Me.EMAIL.HeaderText = "Email"
+        Me.EMAIL.Name = "EMAIL"
+        Me.EMAIL.ReadOnly = True
+        '
+        'EXISTE
+        '
+        Me.EXISTE.DataPropertyName = "EXISTE"
+        Me.EXISTE.HeaderText = "EXISTE"
+        Me.EXISTE.Name = "EXISTE"
+        Me.EXISTE.ReadOnly = True
+        Me.EXISTE.Visible = False
+        '
+        'BDDBIBLIOTECADataSetBindingSource
+        '
+        Me.BDDBIBLIOTECADataSetBindingSource.DataSource = Me.BDDBIBLIOTECADataSet
+        Me.BDDBIBLIOTECADataSetBindingSource.Position = 0
+        '
+        'BDDBIBLIOTECADataSet
+        '
+        Me.BDDBIBLIOTECADataSet.DataSetName = "BDDBIBLIOTECADataSet"
+        Me.BDDBIBLIOTECADataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'TBL_LECTORESTableAdapter
+        '
+        Me.TBL_LECTORESTableAdapter.ClearBeforeFill = True
         '
         'FrmLectores
         '
@@ -202,11 +203,11 @@ Partial Class FrmLectores
     Friend WithEvents btnEditar As System.Windows.Forms.Button
     Friend WithEvents btnEliminar As System.Windows.Forms.Button
     Friend WithEvents ID_NUMLECTOR As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents NOMBREDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents APATERNODataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents AMATERNODataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DIRECCCIONDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents TELDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents EMAILDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents EXISTEDataGridViewCheckBoxColumn As System.Windows.Forms.DataGridViewCheckBoxColumn
+    Friend WithEvents NOMBRE As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents A_PATERNO As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents A_MATERNO As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DIRECCCION As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents TEL As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents EMAIL As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents EXISTE As System.Windows.Forms.DataGridViewCheckBoxColumn
 End Class

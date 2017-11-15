@@ -15,11 +15,8 @@ C:\Users\MacbookPro\documents\visual studio 2010\Projects\App_Biblioteca\App_Bib
 C:\Users\MacbookPro\documents\visual studio 2010\Projects\App_Biblioteca\App_Biblioteca\bin\Debug\App_Biblioteca.exe
 C:\Users\MacbookPro\documents\visual studio 2010\Projects\App_Biblioteca\App_Biblioteca\bin\Debug\App_Biblioteca.pdb
 C:\Users\MacbookPro\documents\visual studio 2010\Projects\App_Biblioteca\App_Biblioteca\bin\Debug\App_Biblioteca.xml
-C:\Users\MacbookPro\documents\visual studio 2010\Projects\App_Biblioteca\App_Biblioteca\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\MacbookPro\documents\visual studio 2010\Projects\App_Biblioteca\App_Biblioteca\obj\x86\Debug\App_Biblioteca.Main.resources
 C:\Users\MacbookPro\documents\visual studio 2010\Projects\App_Biblioteca\App_Biblioteca\obj\x86\Debug\App_Biblioteca.Resources.resources
-C:\Users\MacbookPro\documents\visual studio 2010\Projects\App_Biblioteca\App_Biblioteca\obj\x86\Debug\GenerateResource.read.1.tlog
-C:\Users\MacbookPro\documents\visual studio 2010\Projects\App_Biblioteca\App_Biblioteca\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\MacbookPro\documents\visual studio 2010\Projects\App_Biblioteca\App_Biblioteca\obj\x86\Debug\App_Biblioteca.Login.resources
 C:\Users\MacbookPro\documents\visual studio 2010\Projects\App_Biblioteca\App_Biblioteca\obj\x86\Debug\App_Biblioteca.FrmLectores.resources
 C:\Users\MacbookPro\documents\visual studio 2010\Projects\App_Biblioteca\App_Biblioteca\obj\x86\Debug\App_Biblioteca.MM_FrmLectores.resources
@@ -35,3 +32,6 @@ C:\Users\dell\Documents\GitHub\App_Biblioteca\App_Biblioteca\obj\x86\Debug\App_B
 C:\Users\dell\Documents\GitHub\App_Biblioteca\App_Biblioteca\obj\x86\Debug\App_Biblioteca.MM_FrmLectores.resources
 C:\Users\dell\Documents\GitHub\App_Biblioteca\App_Biblioteca\obj\x86\Debug\App_Biblioteca.Resources.resources
 C:\Users\dell\Documents\GitHub\App_Biblioteca\App_Biblioteca\obj\x86\Debug\App_Biblioteca.vbproj.GenerateResource.Cache
+C:\Users\MacbookPro\documents\visual studio 2010\Projects\App_Biblioteca\App_Biblioteca\obj\x86\Debug\App_Biblioteca.vbproj.GenerateResource.Cache
+C:\Users\MacbookPro\Documents\Visual Studio 2010\Projects\App_Biblioteca\App_Biblioteca\obj\x86\Debug\App_Biblioteca.FrmUsuarios.resources
+C:\Users\MacbookPro\Documents\Visual Studio 2010\Projects\App_Biblioteca\App_Biblioteca\obj\x86\Debug\App_Biblioteca.MM_FrmUsuarios.resources

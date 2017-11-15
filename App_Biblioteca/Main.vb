@@ -2,13 +2,7 @@
 
 Public Class Main
 
-    Private Sub ShowNewForm(ByVal sender As Object, ByVal e As EventArgs) Handles NewToolStripMenuItem.Click, NewToolStripButton.Click, NewWindowToolStripMenuItem.Click
-        Dim venLectores As New FrmLectores
-        venLectores.MdiParent = Me
-        venLectores.Show()
-    End Sub
-
-    Private Sub OpenFile(ByVal sender As Object, ByVal e As EventArgs) Handles OpenToolStripMenuItem.Click, OpenToolStripButton.Click
+    Private Sub OpenFile(ByVal sender As Object, ByVal e As EventArgs) Handles OpenToolStripButton.Click
         Dim OpenFileDialog As New OpenFileDialog
         OpenFileDialog.InitialDirectory = My.Computer.FileSystem.SpecialDirectories.MyDocuments
         OpenFileDialog.Filter = "Archivos de texto (*.txt)|*.txt|Todos los archivos (*.*)|*.*"
@@ -34,15 +28,15 @@ Public Class Main
         Me.Close()
     End Sub
 
-    Private Sub CutToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles CutToolStripMenuItem.Click
+    Private Sub CutToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
         ' Utilice My.Computer.Clipboard para insertar el texto o las imágenes seleccionadas en el Portapapeles
     End Sub
 
-    Private Sub CopyToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles CopyToolStripMenuItem.Click
+    Private Sub CopyToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
         ' Utilice My.Computer.Clipboard para insertar el texto o las imágenes seleccionadas en el Portapapeles
     End Sub
 
-    Private Sub PasteToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles PasteToolStripMenuItem.Click
+    Private Sub PasteToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
         'Utilice My.Computer.Clipboard.GetText() o My.Computer.Clipboard.GetData para recuperar la información del Portapapeles.
     End Sub
 
@@ -87,5 +81,29 @@ Public Class Main
         venLogin.Show()
         Me.Hide()
 
+    End Sub
+
+    Private Sub ToolStripLectores_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripLectores.Click
+        Dim venLectores As New FrmLectores
+        venLectores.MdiParent = Me
+        venLectores.Show()
+    End Sub
+
+    Private Sub LectoresToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LectoresToolStripMenuItem.Click
+        Dim venLectores As New FrmLectores
+        venLectores.MdiParent = Me
+        venLectores.Show()
+    End Sub
+
+    Private Sub UsuariosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UsuariosToolStripMenuItem.Click
+        Dim venUsuarios As New FrmUsuarios
+        venUsuarios.MdiParent = Me
+        venUsuarios.Show()
+    End Sub
+
+    Private Sub CategoriasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CategoriasToolStripMenuItem.Click
+        'Dim venCat As New FrmCategorias
+        'venCat.MdiParent = Me
+        'venCat.Show()
     End Sub
 End Class
