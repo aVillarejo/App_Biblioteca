@@ -29,8 +29,12 @@
         venMM.txtTel.Text = Me.DTUsuarios.CurrentRow.Cells("TEL").Value
         venMM.txtLogin.Text = Me.DTUsuarios.CurrentRow.Cells("LOGIN").Value
         venMM.txtPassword.Text = Me.DTUsuarios.CurrentRow.Cells("PASSWORD").Value
-        venMM.cbTipo.Text = Me.DTUsuarios.CurrentRow.Cells("USUTIPO").Value
 
+        If (Me.DTUsuarios.CurrentRow.Cells("USUTIPO").Value = "A") Then
+            venMM.cbTipo.Text = "Administrador"
+        Else
+            venMM.cbTipo.Text = "Usuario"
+        End If
         If venMM.ShowDialog = Windows.Forms.DialogResult.OK Then
             Me.TBL_USUARIOSTableAdapter.Connection = Conexion
             Me.TBL_USUARIOSTableAdapter.Fill(Me.BDDBIBLIOTECADataSet.TBL_USUARIOS)

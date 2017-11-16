@@ -81,6 +81,12 @@
     <Compile Include="BDDBIBLIOTECADataSet.vb">
       <DependentUpon>BDDBIBLIOTECADataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FrmCategorias.Designer.vb">
+      <DependentUpon>FrmCategorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCategorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmLectores.Designer.vb">
       <DependentUpon>FrmLectores.vb</DependentUpon>
     </Compile>
@@ -103,6 +109,12 @@
       <DependentUpon>Main.vb</DependentUpon>
     </Compile>
     <Compile Include="Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MM_FrmCategorias.Designer.vb">
+      <DependentUpon>MM_FrmCategorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MM_FrmCategorias.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MM_FrmLectores.Designer.vb">
@@ -134,6 +146,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmCategorias.resx">
+      <DependentUpon>FrmCategorias.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLectores.resx">
       <DependentUpon>FrmLectores.vb</DependentUpon>
     </EmbeddedResource>
@@ -145,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MM_FrmCategorias.resx">
+      <DependentUpon>MM_FrmCategorias.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MM_FrmLectores.resx">
       <DependentUpon>MM_FrmLectores.vb</DependentUpon>

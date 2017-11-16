@@ -35,3 +35,5 @@ C:\Users\dell\Documents\GitHub\App_Biblioteca\App_Biblioteca\obj\x86\Debug\App_B
 C:\Users\MacbookPro\documents\visual studio 2010\Projects\App_Biblioteca\App_Biblioteca\obj\x86\Debug\App_Biblioteca.vbproj.GenerateResource.Cache
 C:\Users\MacbookPro\Documents\Visual Studio 2010\Projects\App_Biblioteca\App_Biblioteca\obj\x86\Debug\App_Biblioteca.FrmUsuarios.resources
 C:\Users\MacbookPro\Documents\Visual Studio 2010\Projects\App_Biblioteca\App_Biblioteca\obj\x86\Debug\App_Biblioteca.MM_FrmUsuarios.resources
+C:\Users\MacbookPro\documents\visual studio 2010\Projects\App_Biblioteca\App_Biblioteca\obj\x86\Debug\App_Biblioteca.FrmCategorias.resources
+C:\Users\MacbookPro\documents\visual studio 2010\Projects\App_Biblioteca\App_Biblioteca\obj\x86\Debug\App_Biblioteca.MM_FrmCategorias.resources

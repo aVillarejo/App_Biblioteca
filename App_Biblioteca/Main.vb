@@ -102,8 +102,8 @@ Public Class Main
     End Sub
 
     Private Sub CategoriasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CategoriasToolStripMenuItem.Click
-        'Dim venCat As New FrmCategorias
-        'venCat.MdiParent = Me
-        'venCat.Show()
+        Dim venCat As New FrmCategorias
+        venCat.MdiParent = Me
+        venCat.Show()
     End Sub
 End Class

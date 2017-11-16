@@ -27,7 +27,6 @@
             If Conectar() = True Then
                 If comando.Parameters("@RETORNO").Value = 1 Then
                     MsgBox("El Lector ya existe", MsgBoxStyle.Critical, "ERROR")
-
                 Else
                     DialogResult = Windows.Forms.DialogResult.OK
                     MsgBox("La Operacion Se Realizo Correctamente", MsgBoxStyle.OkOnly, " ")

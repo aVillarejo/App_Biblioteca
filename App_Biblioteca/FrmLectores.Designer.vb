@@ -24,10 +24,6 @@ Partial Class FrmLectores
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.DTLectores = New System.Windows.Forms.DataGridView()
-        Me.TBLLECTORESBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.btnNuevo = New System.Windows.Forms.Button()
-        Me.btnEditar = New System.Windows.Forms.Button()
-        Me.btnEliminar = New System.Windows.Forms.Button()
         Me.ID_NUMLECTOR = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NOMBRE = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.A_PATERNO = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -36,8 +32,12 @@ Partial Class FrmLectores
         Me.TEL = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EMAIL = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EXISTE = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.TBLLECTORESBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.BDDBIBLIOTECADataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.BDDBIBLIOTECADataSet = New App_Biblioteca.BDDBIBLIOTECADataSet()
+        Me.btnNuevo = New System.Windows.Forms.Button()
+        Me.btnEditar = New System.Windows.Forms.Button()
+        Me.btnEliminar = New System.Windows.Forms.Button()
         Me.TBL_LECTORESTableAdapter = New App_Biblioteca.BDDBIBLIOTECADataSetTableAdapters.TBL_LECTORESTableAdapter()
         CType(Me.DTLectores, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TBLLECTORESBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -61,38 +61,6 @@ Partial Class FrmLectores
         Me.DTLectores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DTLectores.Size = New System.Drawing.Size(1259, 407)
         Me.DTLectores.TabIndex = 0
-        '
-        'TBLLECTORESBindingSource
-        '
-        Me.TBLLECTORESBindingSource.DataMember = "TBL_LECTORES"
-        Me.TBLLECTORESBindingSource.DataSource = Me.BDDBIBLIOTECADataSetBindingSource
-        '
-        'btnNuevo
-        '
-        Me.btnNuevo.Location = New System.Drawing.Point(471, 502)
-        Me.btnNuevo.Name = "btnNuevo"
-        Me.btnNuevo.Size = New System.Drawing.Size(95, 43)
-        Me.btnNuevo.TabIndex = 1
-        Me.btnNuevo.Text = "Nuevo"
-        Me.btnNuevo.UseVisualStyleBackColor = True
-        '
-        'btnEditar
-        '
-        Me.btnEditar.Location = New System.Drawing.Point(595, 502)
-        Me.btnEditar.Name = "btnEditar"
-        Me.btnEditar.Size = New System.Drawing.Size(95, 43)
-        Me.btnEditar.TabIndex = 2
-        Me.btnEditar.Text = "Editar"
-        Me.btnEditar.UseVisualStyleBackColor = True
-        '
-        'btnEliminar
-        '
-        Me.btnEliminar.Location = New System.Drawing.Point(713, 502)
-        Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(95, 43)
-        Me.btnEliminar.TabIndex = 3
-        Me.btnEliminar.Text = "Eliminar"
-        Me.btnEliminar.UseVisualStyleBackColor = True
         '
         'ID_NUMLECTOR
         '
@@ -159,6 +127,11 @@ Partial Class FrmLectores
         Me.EXISTE.ReadOnly = True
         Me.EXISTE.Visible = False
         '
+        'TBLLECTORESBindingSource
+        '
+        Me.TBLLECTORESBindingSource.DataMember = "TBL_LECTORES"
+        Me.TBLLECTORESBindingSource.DataSource = Me.BDDBIBLIOTECADataSetBindingSource
+        '
         'BDDBIBLIOTECADataSetBindingSource
         '
         Me.BDDBIBLIOTECADataSetBindingSource.DataSource = Me.BDDBIBLIOTECADataSet
@@ -169,6 +142,33 @@ Partial Class FrmLectores
         Me.BDDBIBLIOTECADataSet.DataSetName = "BDDBIBLIOTECADataSet"
         Me.BDDBIBLIOTECADataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
+        'btnNuevo
+        '
+        Me.btnNuevo.Location = New System.Drawing.Point(471, 502)
+        Me.btnNuevo.Name = "btnNuevo"
+        Me.btnNuevo.Size = New System.Drawing.Size(95, 43)
+        Me.btnNuevo.TabIndex = 1
+        Me.btnNuevo.Text = "Nuevo"
+        Me.btnNuevo.UseVisualStyleBackColor = True
+        '
+        'btnEditar
+        '
+        Me.btnEditar.Location = New System.Drawing.Point(595, 502)
+        Me.btnEditar.Name = "btnEditar"
+        Me.btnEditar.Size = New System.Drawing.Size(95, 43)
+        Me.btnEditar.TabIndex = 2
+        Me.btnEditar.Text = "Editar"
+        Me.btnEditar.UseVisualStyleBackColor = True
+        '
+        'btnEliminar
+        '
+        Me.btnEliminar.Location = New System.Drawing.Point(713, 502)
+        Me.btnEliminar.Name = "btnEliminar"
+        Me.btnEliminar.Size = New System.Drawing.Size(95, 43)
+        Me.btnEliminar.TabIndex = 3
+        Me.btnEliminar.Text = "Eliminar"
+        Me.btnEliminar.UseVisualStyleBackColor = True
+        '
         'TBL_LECTORESTableAdapter
         '
         Me.TBL_LECTORESTableAdapter.ClearBeforeFill = True
@@ -177,6 +177,7 @@ Partial Class FrmLectores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.Window
         Me.ClientSize = New System.Drawing.Size(1259, 627)
         Me.Controls.Add(Me.btnEliminar)
         Me.Controls.Add(Me.btnEditar)
