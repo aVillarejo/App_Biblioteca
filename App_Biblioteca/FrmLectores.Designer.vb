@@ -51,6 +51,8 @@ Partial Class FrmLectores
         Me.DTLectores.AllowUserToDeleteRows = False
         Me.DTLectores.AllowUserToOrderColumns = True
         Me.DTLectores.AutoGenerateColumns = False
+        Me.DTLectores.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.DTLectores.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
         Me.DTLectores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DTLectores.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID_NUMLECTOR, Me.NOMBRE, Me.A_PATERNO, Me.A_MATERNO, Me.DIRECCCION, Me.TEL, Me.EMAIL, Me.EXISTE})
         Me.DTLectores.DataSource = Me.TBLLECTORESBindingSource
@@ -58,6 +60,8 @@ Partial Class FrmLectores
         Me.DTLectores.Location = New System.Drawing.Point(0, 0)
         Me.DTLectores.Name = "DTLectores"
         Me.DTLectores.ReadOnly = True
+        Me.DTLectores.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.DTLectores.RowHeadersVisible = False
         Me.DTLectores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DTLectores.Size = New System.Drawing.Size(1259, 407)
         Me.DTLectores.TabIndex = 0

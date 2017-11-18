@@ -77,9 +77,10 @@ Public Class Main
         Call INICIO()
 
         Dim venLogin As New Login
-
-        venLogin.Show()
-        Me.Hide()
+        IDBUSQUEDA = 0
+        If venLogin.ShowDialog = Windows.Forms.DialogResult.OK Then
+            Me.Show()
+        End If
 
     End Sub
 

@@ -24,75 +24,48 @@ Partial Class FrmCategorias
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.DTCategorias = New System.Windows.Forms.DataGridView()
-        Me.BDDBIBLIOTECADataSet = New App_Biblioteca.BDDBIBLIOTECADataSet()
         Me.TBLCATEGORIASBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.BDDBIBLIOTECADataSet = New App_Biblioteca.BDDBIBLIOTECADataSet()
         Me.TBL_CATEGORIASTableAdapter = New App_Biblioteca.BDDBIBLIOTECADataSetTableAdapters.TBL_CATEGORIASTableAdapter()
-        Me.IDCATEGORIADataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NOMBRE = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DESCRIPCION = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ExisteDataGridViewCheckBoxColumn = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.btnNuevo = New System.Windows.Forms.Button()
         Me.btnEditar = New System.Windows.Forms.Button()
         Me.btnSalir = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.ID_CATEGORIA = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NOMBRE = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DESCRIPCION = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ExisteDataGridViewCheckBoxColumn = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         CType(Me.DTCategorias, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BDDBIBLIOTECADataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TBLCATEGORIASBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BDDBIBLIOTECADataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DTCategorias
         '
         Me.DTCategorias.AutoGenerateColumns = False
         Me.DTCategorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DTCategorias.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDCATEGORIADataGridViewTextBoxColumn, Me.NOMBRE, Me.DESCRIPCION, Me.ExisteDataGridViewCheckBoxColumn})
+        Me.DTCategorias.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID_CATEGORIA, Me.NOMBRE, Me.DESCRIPCION, Me.ExisteDataGridViewCheckBoxColumn})
         Me.DTCategorias.DataSource = Me.TBLCATEGORIASBindingSource
         Me.DTCategorias.Location = New System.Drawing.Point(44, 38)
         Me.DTCategorias.Name = "DTCategorias"
+        Me.DTCategorias.RowHeadersVisible = False
+        Me.DTCategorias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DTCategorias.Size = New System.Drawing.Size(1135, 244)
         Me.DTCategorias.TabIndex = 0
-        '
-        'BDDBIBLIOTECADataSet
-        '
-        Me.BDDBIBLIOTECADataSet.DataSetName = "BDDBIBLIOTECADataSet"
-        Me.BDDBIBLIOTECADataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'TBLCATEGORIASBindingSource
         '
         Me.TBLCATEGORIASBindingSource.DataMember = "TBL_CATEGORIAS"
         Me.TBLCATEGORIASBindingSource.DataSource = Me.BDDBIBLIOTECADataSet
         '
+        'BDDBIBLIOTECADataSet
+        '
+        Me.BDDBIBLIOTECADataSet.DataSetName = "BDDBIBLIOTECADataSet"
+        Me.BDDBIBLIOTECADataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'TBL_CATEGORIASTableAdapter
         '
         Me.TBL_CATEGORIASTableAdapter.ClearBeforeFill = True
-        '
-        'IDCATEGORIADataGridViewTextBoxColumn
-        '
-        Me.IDCATEGORIADataGridViewTextBoxColumn.DataPropertyName = "ID_CATEGORIA"
-        Me.IDCATEGORIADataGridViewTextBoxColumn.HeaderText = "ID_CATEGORIA"
-        Me.IDCATEGORIADataGridViewTextBoxColumn.Name = "IDCATEGORIADataGridViewTextBoxColumn"
-        Me.IDCATEGORIADataGridViewTextBoxColumn.ReadOnly = True
-        Me.IDCATEGORIADataGridViewTextBoxColumn.Visible = False
-        '
-        'NOMBRE
-        '
-        Me.NOMBRE.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.NOMBRE.DataPropertyName = "Nombre"
-        Me.NOMBRE.HeaderText = "NOMBRE"
-        Me.NOMBRE.Name = "NOMBRE"
-        '
-        'DESCRIPCION
-        '
-        Me.DESCRIPCION.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.DESCRIPCION.DataPropertyName = "Descripcion"
-        Me.DESCRIPCION.HeaderText = "DESCRIPCION"
-        Me.DESCRIPCION.Name = "DESCRIPCION"
-        '
-        'ExisteDataGridViewCheckBoxColumn
-        '
-        Me.ExisteDataGridViewCheckBoxColumn.DataPropertyName = "Existe"
-        Me.ExisteDataGridViewCheckBoxColumn.HeaderText = "Existe"
-        Me.ExisteDataGridViewCheckBoxColumn.Name = "ExisteDataGridViewCheckBoxColumn"
-        Me.ExisteDataGridViewCheckBoxColumn.Visible = False
         '
         'btnNuevo
         '
@@ -130,6 +103,35 @@ Partial Class FrmCategorias
         Me.btnEliminar.Text = "ELIMINAR"
         Me.btnEliminar.UseVisualStyleBackColor = True
         '
+        'ID_CATEGORIA
+        '
+        Me.ID_CATEGORIA.DataPropertyName = "ID_CATEGORIA"
+        Me.ID_CATEGORIA.HeaderText = "ID_CATEGORIA"
+        Me.ID_CATEGORIA.Name = "ID_CATEGORIA"
+        Me.ID_CATEGORIA.ReadOnly = True
+        Me.ID_CATEGORIA.Visible = False
+        '
+        'NOMBRE
+        '
+        Me.NOMBRE.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.NOMBRE.DataPropertyName = "Nombre"
+        Me.NOMBRE.HeaderText = "NOMBRE"
+        Me.NOMBRE.Name = "NOMBRE"
+        '
+        'DESCRIPCION
+        '
+        Me.DESCRIPCION.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.DESCRIPCION.DataPropertyName = "Descripcion"
+        Me.DESCRIPCION.HeaderText = "DESCRIPCION"
+        Me.DESCRIPCION.Name = "DESCRIPCION"
+        '
+        'ExisteDataGridViewCheckBoxColumn
+        '
+        Me.ExisteDataGridViewCheckBoxColumn.DataPropertyName = "Existe"
+        Me.ExisteDataGridViewCheckBoxColumn.HeaderText = "Existe"
+        Me.ExisteDataGridViewCheckBoxColumn.Name = "ExisteDataGridViewCheckBoxColumn"
+        Me.ExisteDataGridViewCheckBoxColumn.Visible = False
+        '
         'FrmCategorias
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -143,8 +145,8 @@ Partial Class FrmCategorias
         Me.Name = "FrmCategorias"
         Me.Text = "FrmCategorias"
         CType(Me.DTCategorias, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BDDBIBLIOTECADataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TBLCATEGORIASBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BDDBIBLIOTECADataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -152,12 +154,12 @@ Partial Class FrmCategorias
     Friend WithEvents BDDBIBLIOTECADataSet As App_Biblioteca.BDDBIBLIOTECADataSet
     Friend WithEvents TBLCATEGORIASBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents TBL_CATEGORIASTableAdapter As App_Biblioteca.BDDBIBLIOTECADataSetTableAdapters.TBL_CATEGORIASTableAdapter
-    Friend WithEvents IDCATEGORIADataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents NOMBRE As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DESCRIPCION As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ExisteDataGridViewCheckBoxColumn As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents btnNuevo As System.Windows.Forms.Button
     Friend WithEvents btnEditar As System.Windows.Forms.Button
     Friend WithEvents btnSalir As System.Windows.Forms.Button
     Friend WithEvents btnEliminar As System.Windows.Forms.Button
+    Friend WithEvents ID_CATEGORIA As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents NOMBRE As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DESCRIPCION As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ExisteDataGridViewCheckBoxColumn As System.Windows.Forms.DataGridViewCheckBoxColumn
 End Class
