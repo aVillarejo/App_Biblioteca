@@ -33,7 +33,7 @@
     Private Sub btnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEliminar.Click
         If DTCategorias.RowCount > 0 Then
             Dim r As String
-            r = MsgBox("Esta Seguro de Eliminar El Cliente Seleccionado", MsgBoxStyle.YesNo, "Advertencia")
+            r = MsgBox("Esta Seguro de Eliminar la Categoria Seleccionado", MsgBoxStyle.YesNo, "Advertencia")
             If r = "6" Then
                 StrSQL = "ProEliminarCategoria"
                 comando = New SqlClient.SqlCommand(StrSQL, Conexion)
