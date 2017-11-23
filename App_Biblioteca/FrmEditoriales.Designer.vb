@@ -33,6 +33,9 @@ Partial Class FrmEditoriales
         Me.TBLEDITORIALESBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.BDDBIBLIOTECADataSet = New App_Biblioteca.BDDBIBLIOTECADataSet()
         Me.TBL_EDITORIALESTableAdapter = New App_Biblioteca.BDDBIBLIOTECADataSetTableAdapters.TBL_EDITORIALESTableAdapter()
+        Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.btnEditar = New System.Windows.Forms.Button()
+        Me.btnNuevo = New System.Windows.Forms.Button()
         CType(Me.DTEditoriales, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TBLEDITORIALESBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BDDBIBLIOTECADataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -47,10 +50,10 @@ Partial Class FrmEditoriales
         Me.DTEditoriales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DTEditoriales.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDEDITORIALDataGridViewTextBoxColumn, Me.Nombre, Me.Direccion, Me.Email, Me.Telefono, Me.Existe})
         Me.DTEditoriales.DataSource = Me.TBLEDITORIALESBindingSource
-        Me.DTEditoriales.Location = New System.Drawing.Point(72, 69)
+        Me.DTEditoriales.Location = New System.Drawing.Point(12, 12)
         Me.DTEditoriales.Name = "DTEditoriales"
         Me.DTEditoriales.ReadOnly = True
-        Me.DTEditoriales.Size = New System.Drawing.Size(1275, 665)
+        Me.DTEditoriales.Size = New System.Drawing.Size(1074, 394)
         Me.DTEditoriales.TabIndex = 0
         '
         'IDEDITORIALDataGridViewTextBoxColumn
@@ -112,11 +115,41 @@ Partial Class FrmEditoriales
         '
         Me.TBL_EDITORIALESTableAdapter.ClearBeforeFill = True
         '
+        'btnEliminar
+        '
+        Me.btnEliminar.Location = New System.Drawing.Point(551, 476)
+        Me.btnEliminar.Name = "btnEliminar"
+        Me.btnEliminar.Size = New System.Drawing.Size(95, 43)
+        Me.btnEliminar.TabIndex = 6
+        Me.btnEliminar.Text = "Eliminar"
+        Me.btnEliminar.UseVisualStyleBackColor = True
+        '
+        'btnEditar
+        '
+        Me.btnEditar.Location = New System.Drawing.Point(433, 476)
+        Me.btnEditar.Name = "btnEditar"
+        Me.btnEditar.Size = New System.Drawing.Size(95, 43)
+        Me.btnEditar.TabIndex = 5
+        Me.btnEditar.Text = "Editar"
+        Me.btnEditar.UseVisualStyleBackColor = True
+        '
+        'btnNuevo
+        '
+        Me.btnNuevo.Location = New System.Drawing.Point(309, 476)
+        Me.btnNuevo.Name = "btnNuevo"
+        Me.btnNuevo.Size = New System.Drawing.Size(95, 43)
+        Me.btnNuevo.TabIndex = 4
+        Me.btnNuevo.Text = "Nuevo"
+        Me.btnNuevo.UseVisualStyleBackColor = True
+        '
         'FrmEditoriales
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(595, 493)
+        Me.ClientSize = New System.Drawing.Size(1139, 624)
+        Me.Controls.Add(Me.btnEliminar)
+        Me.Controls.Add(Me.btnEditar)
+        Me.Controls.Add(Me.btnNuevo)
         Me.Controls.Add(Me.DTEditoriales)
         Me.Name = "FrmEditoriales"
         Me.Text = "FrmEditoriales"
@@ -136,4 +169,7 @@ Partial Class FrmEditoriales
     Friend WithEvents Email As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Telefono As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Existe As System.Windows.Forms.DataGridViewCheckBoxColumn
+    Friend WithEvents btnEliminar As System.Windows.Forms.Button
+    Friend WithEvents btnEditar As System.Windows.Forms.Button
+    Friend WithEvents btnNuevo As System.Windows.Forms.Button
 End Class
