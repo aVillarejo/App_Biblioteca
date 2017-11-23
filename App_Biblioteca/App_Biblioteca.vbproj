@@ -87,10 +87,22 @@
     <Compile Include="FrmCategorias.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MM_FrmEditoriales.Designer.vb">
+      <DependentUpon>MM_FrmEditoriales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MM_FrmEditoriales.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmLectores.Designer.vb">
       <DependentUpon>FrmLectores.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmLectores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLibros.Designer.vb">
+      <DependentUpon>FrmLibros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLibros.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmUsuarios.Designer.vb">
@@ -117,10 +129,22 @@
     <Compile Include="MM_FrmCategorias.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmEditoriales.Designer.vb">
+      <DependentUpon>FrmEditoriales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditoriales.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MM_FrmLectores.Designer.vb">
       <DependentUpon>MM_FrmLectores.vb</DependentUpon>
     </Compile>
     <Compile Include="MM_FrmLectores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MM_FrmLibros.Designer.vb">
+      <DependentUpon>MM_FrmLibros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MM_FrmLibros.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MM_FrmUsuarios.Designer.vb">
@@ -152,6 +176,9 @@
     <EmbeddedResource Include="FrmLectores.resx">
       <DependentUpon>FrmLectores.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmLibros.resx">
+      <DependentUpon>FrmLibros.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmUsuarios.resx">
       <DependentUpon>FrmUsuarios.vb</DependentUpon>
     </EmbeddedResource>
@@ -164,8 +191,17 @@
     <EmbeddedResource Include="MM_FrmCategorias.resx">
       <DependentUpon>MM_FrmCategorias.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditoriales.resx">
+      <DependentUpon>FrmEditoriales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MM_FrmEditoriales.resx">
+      <DependentUpon>MM_FrmEditoriales.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MM_FrmLectores.resx">
       <DependentUpon>MM_FrmLectores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MM_FrmLibros.resx">
+      <DependentUpon>MM_FrmLibros.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MM_FrmUsuarios.resx">
       <DependentUpon>MM_FrmUsuarios.vb</DependentUpon>

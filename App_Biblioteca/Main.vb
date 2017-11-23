@@ -107,4 +107,17 @@ Public Class Main
         venCat.MdiParent = Me
         venCat.Show()
     End Sub
+
+   
+    Private Sub LibrosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LibrosToolStripMenuItem.Click
+        Dim venCat As New FrmLibros
+        venCat.MdiParent = Me
+        venCat.Show()
+    End Sub
+
+    Private Sub EditorialesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EditorialesToolStripMenuItem.Click
+        Dim venCat As New FrmEditoriales
+        venCat.MdiParent = Me
+        venCat.Show()
+    End Sub
 End Class

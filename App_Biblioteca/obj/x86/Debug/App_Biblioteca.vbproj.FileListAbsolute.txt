@@ -37,3 +37,7 @@ C:\Users\MacbookPro\Documents\Visual Studio 2010\Projects\App_Biblioteca\App_Bib
 C:\Users\MacbookPro\Documents\Visual Studio 2010\Projects\App_Biblioteca\App_Biblioteca\obj\x86\Debug\App_Biblioteca.MM_FrmUsuarios.resources
 C:\Users\MacbookPro\documents\visual studio 2010\Projects\App_Biblioteca\App_Biblioteca\obj\x86\Debug\App_Biblioteca.FrmCategorias.resources
 C:\Users\MacbookPro\documents\visual studio 2010\Projects\App_Biblioteca\App_Biblioteca\obj\x86\Debug\App_Biblioteca.MM_FrmCategorias.resources
+C:\Users\MacbookPro\documents\visual studio 2010\Projects\App_Biblioteca\App_Biblioteca\obj\x86\Debug\App_Biblioteca.FrmLibros.resources
+C:\Users\MacbookPro\documents\visual studio 2010\Projects\App_Biblioteca\App_Biblioteca\obj\x86\Debug\App_Biblioteca.FrmEditoriales.resources
+C:\Users\MacbookPro\documents\visual studio 2010\Projects\App_Biblioteca\App_Biblioteca\obj\x86\Debug\App_Biblioteca.MM_FrmEditoriales.resources
+C:\Users\MacbookPro\documents\visual studio 2010\Projects\App_Biblioteca\App_Biblioteca\obj\x86\Debug\App_Biblioteca.MM_FrmLibros.resources
