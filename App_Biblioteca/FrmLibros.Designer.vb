@@ -165,7 +165,7 @@ Partial Class FrmLibros
         Me.Controls.Add(Me.btnEditar)
         Me.Controls.Add(Me.btnNuevo)
         Me.Name = "FrmLibros"
-        Me.Text = "FrmLibros"
+        Me.Text = " "
         CType(Me.BDDBIBLIOTECADataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TBL_LIBROSBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TBL_LIBROSDataGridView, System.ComponentModel.ISupportInitialize).EndInit()

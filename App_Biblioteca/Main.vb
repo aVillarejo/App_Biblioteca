@@ -23,7 +23,6 @@ Public Class Main
         End If
     End Sub
 
-
     Private Sub ExitToolsStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs) Handles ExitToolStripMenuItem.Click
         Me.Close()
     End Sub
@@ -85,9 +84,12 @@ Public Class Main
     End Sub
 
     Private Sub ToolStripLectores_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripLectores.Click
+        Call Cerrar()
         Dim venLectores As New FrmLectores
         venLectores.MdiParent = Me
+
         venLectores.Show()
+
     End Sub
 
     Private Sub LectoresToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LectoresToolStripMenuItem.Click
@@ -108,7 +110,6 @@ Public Class Main
         venCat.Show()
     End Sub
 
-   
     Private Sub LibrosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LibrosToolStripMenuItem.Click
         Dim venCat As New FrmLibros
         venCat.MdiParent = Me
@@ -120,4 +121,7 @@ Public Class Main
         venCat.MdiParent = Me
         venCat.Show()
     End Sub
+
+   
+
 End Class
