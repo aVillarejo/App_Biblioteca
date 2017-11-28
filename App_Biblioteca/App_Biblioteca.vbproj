@@ -72,85 +72,85 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BdDatos.vb" />
-    <Compile Include="BDDBIBLIOTECADataSet.Designer.vb">
+    <Compile Include="Datos\BdDatos.vb" />
+    <Compile Include="Datos\BDDBIBLIOTECADataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BDDBIBLIOTECADataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="BDDBIBLIOTECADataSet.vb">
+    <Compile Include="Datos\BDDBIBLIOTECADataSet.vb">
       <DependentUpon>BDDBIBLIOTECADataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="FrmCategorias.Designer.vb">
+    <Compile Include="Formularios\FrmCategorias.Designer.vb">
       <DependentUpon>FrmCategorias.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmCategorias.vb">
+    <Compile Include="Formularios\FrmCategorias.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MM_FrmEditoriales.Designer.vb">
+    <Compile Include="Vistas\MM_FrmEditoriales.Designer.vb">
       <DependentUpon>MM_FrmEditoriales.vb</DependentUpon>
     </Compile>
-    <Compile Include="MM_FrmEditoriales.vb">
+    <Compile Include="Vistas\MM_FrmEditoriales.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLectores.Designer.vb">
+    <Compile Include="Formularios\FrmLectores.Designer.vb">
       <DependentUpon>FrmLectores.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmLectores.vb">
+    <Compile Include="Formularios\FrmLectores.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLibros.Designer.vb">
+    <Compile Include="Formularios\FrmLibros.Designer.vb">
       <DependentUpon>FrmLibros.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmLibros.vb">
+    <Compile Include="Formularios\FrmLibros.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmUsuarios.Designer.vb">
+    <Compile Include="Formularios\FrmUsuarios.Designer.vb">
       <DependentUpon>FrmUsuarios.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmUsuarios.vb">
+    <Compile Include="Formularios\FrmUsuarios.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.vb">
+    <Compile Include="Formularios\Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
-    <Compile Include="Login.vb">
+    <Compile Include="Formularios\Login.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.vb">
+    <Compile Include="Formularios\Main.Designer.vb">
       <DependentUpon>Main.vb</DependentUpon>
     </Compile>
-    <Compile Include="Main.vb">
+    <Compile Include="Formularios\Main.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MM_FrmCategorias.Designer.vb">
+    <Compile Include="Vistas\MM_FrmCategorias.Designer.vb">
       <DependentUpon>MM_FrmCategorias.vb</DependentUpon>
     </Compile>
-    <Compile Include="MM_FrmCategorias.vb">
+    <Compile Include="Vistas\MM_FrmCategorias.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmEditoriales.Designer.vb">
+    <Compile Include="Formularios\FrmEditoriales.Designer.vb">
       <DependentUpon>FrmEditoriales.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmEditoriales.vb">
+    <Compile Include="Formularios\FrmEditoriales.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MM_FrmLectores.Designer.vb">
+    <Compile Include="Vistas\MM_FrmLectores.Designer.vb">
       <DependentUpon>MM_FrmLectores.vb</DependentUpon>
     </Compile>
-    <Compile Include="MM_FrmLectores.vb">
+    <Compile Include="Vistas\MM_FrmLectores.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MM_FrmLibros.Designer.vb">
+    <Compile Include="Vistas\MM_FrmLibros.Designer.vb">
       <DependentUpon>MM_FrmLibros.vb</DependentUpon>
     </Compile>
-    <Compile Include="MM_FrmLibros.vb">
+    <Compile Include="Vistas\MM_FrmLibros.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MM_FrmUsuarios.Designer.vb">
+    <Compile Include="Vistas\MM_FrmUsuarios.Designer.vb">
       <DependentUpon>MM_FrmUsuarios.vb</DependentUpon>
     </Compile>
-    <Compile Include="MM_FrmUsuarios.vb">
+    <Compile Include="Vistas\MM_FrmUsuarios.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -170,40 +170,40 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FrmCategorias.resx">
+    <EmbeddedResource Include="Formularios\FrmCategorias.resx">
       <DependentUpon>FrmCategorias.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmLectores.resx">
+    <EmbeddedResource Include="Formularios\FrmLectores.resx">
       <DependentUpon>FrmLectores.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmLibros.resx">
+    <EmbeddedResource Include="Formularios\FrmLibros.resx">
       <DependentUpon>FrmLibros.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmUsuarios.resx">
+    <EmbeddedResource Include="Formularios\FrmUsuarios.resx">
       <DependentUpon>FrmUsuarios.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="Formularios\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main.resx">
+    <EmbeddedResource Include="Formularios\Main.resx">
       <DependentUpon>Main.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MM_FrmCategorias.resx">
+    <EmbeddedResource Include="Vistas\MM_FrmCategorias.resx">
       <DependentUpon>MM_FrmCategorias.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmEditoriales.resx">
+    <EmbeddedResource Include="Formularios\FrmEditoriales.resx">
       <DependentUpon>FrmEditoriales.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MM_FrmEditoriales.resx">
+    <EmbeddedResource Include="Vistas\MM_FrmEditoriales.resx">
       <DependentUpon>MM_FrmEditoriales.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MM_FrmLectores.resx">
+    <EmbeddedResource Include="Vistas\MM_FrmLectores.resx">
       <DependentUpon>MM_FrmLectores.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MM_FrmLibros.resx">
+    <EmbeddedResource Include="Vistas\MM_FrmLibros.resx">
       <DependentUpon>MM_FrmLibros.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MM_FrmUsuarios.resx">
+    <EmbeddedResource Include="Vistas\MM_FrmUsuarios.resx">
       <DependentUpon>MM_FrmUsuarios.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -214,18 +214,18 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="BDDBIBLIOTECADataSet.xsc">
+    <None Include="Datos\BDDBIBLIOTECADataSet.xsc">
       <DependentUpon>BDDBIBLIOTECADataSet.xsd</DependentUpon>
     </None>
-    <None Include="BDDBIBLIOTECADataSet.xsd">
+    <None Include="Datos\BDDBIBLIOTECADataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>BDDBIBLIOTECADataSet.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="BDDBIBLIOTECADataSet.xss">
+    <None Include="Datos\BDDBIBLIOTECADataSet.xss">
       <DependentUpon>BDDBIBLIOTECADataSet.xsd</DependentUpon>
     </None>
-    <None Include="ClassDiagram1.cd" />
+    <None Include="Datos\ClassDiagram1.cd" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -260,6 +260,7 @@
   <ItemGroup>
     <None Include="Resources\base_business_contacts.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
